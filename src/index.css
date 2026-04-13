@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@layer base {
+    @media print {
+
+        /* Ép buộc trình duyệt in màu nền và hình ảnh */
+        * {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+
+        /* Thiết lập kích thước trang A4 và loại bỏ lề mặc định của trình duyệt */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            background-color: white !important;
+            margin: 0;
+            padding: 0;
+            /* Thu nhỏ toàn bộ nội dung để vừa 1 trang A4 */
+            zoom: 0.95;
+        }
+
+        /* Đảm bảo nội dung vừa vặn với trang in */
+        .print\:shadow-none {
+            box-shadow: none !important;
+        }
+
+        /* Chống tràn trang / cắt ngang nội dung giữa 2 trang */
+        section,
+        .bg-gray-50,
+        .break-inside-avoid {
+            break-inside: avoid !important;
+            page-break-inside: avoid !important;
+        }
+    }
+}

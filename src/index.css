@@ -13,6 +13,13 @@
             print-color-adjust: exact !important;
         }
 
+        /* Fix lỗi link không click được khi lưu ra PDF trên Chrome */
+        a {
+            position: relative !important;
+            z-index: 50 !important;
+            display: inline-block !important;
+        }
+
         /* Thiết lập kích thước trang A4 và loại bỏ lề mặc định của trình duyệt */
         @page {
             size: A4;

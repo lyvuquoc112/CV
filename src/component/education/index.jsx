@@ -29,27 +29,29 @@ const Education = () => {
                 <strong>{cert.title}:</strong> {cert.details}
               </p>
               <div className="mt-1.5">
-                <a
-                  href={cert.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={`inline-flex items-center gap-1 text-${
+                <div className={`inline-block border rounded transition-colors box-border text-${
                     cert.type === "academic" ? "orange" : "blue"
                   }-700 hover:text-white hover:bg-${
                     cert.type === "academic" ? "orange" : "blue"
-                  }-600 text-xs font-medium bg-${
+                  }-600 bg-${
                     cert.type === "academic" ? "orange" : "blue"
-                  }-50 px-2 py-1 rounded transition-colors border border-${
+                  }-50 border-${
                     cert.type === "academic" ? "orange" : "blue"
                   }-100 print:bg-${
                     cert.type === "academic" ? "orange" : "blue"
                   }-50 print:border-${
                     cert.type === "academic" ? "orange" : "blue"
-                  }-100`}
-                >
-                  <LuExternalLink size={12} />{" "}
-                  {cert.type === "academic" ? "View Certificates" : "View Score Info"}
-                </a>
+                  }-100`}>
+                  <a
+                    href={cert.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-block relative z-50 text-xs font-medium px-2 py-1 align-middle"
+                  >
+                    <LuExternalLink size={12} className="inline-block align-baseline mr-1" />
+                    {cert.type === "academic" ? "View Certificates" : "View Score Info"}
+                  </a>
+                </div>
               </div>
             </div>
           </div>

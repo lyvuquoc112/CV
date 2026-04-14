@@ -24,13 +24,16 @@ const Projects = () => {
           </div>
 
           <div className="mb-4 text-sm">
+            <span className="inline-block text-blue-600 mr-1 align-middle">
+               <FaGithub size={14} className="inline-block" />
+            </span>
             <a
               href={project.githubUrl}
               target="_blank"
               rel="noreferrer"
-              className="text-blue-600 hover:underline flex items-center gap-1 w-fit"
+              className="text-blue-600 hover:underline inline-block align-middle"
             >
-              <FaGithub size={14} /> {project.githubDisplay}
+              {project.githubDisplay}
             </a>
           </div>
 

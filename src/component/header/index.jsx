@@ -17,47 +17,47 @@ const Header = () => {
         </h2>
 
         {/* Lưới thông tin liên lạc */}
-        <div className="mt-4 flex flex-col sm:flex-row sm:flex-wrap print:flex-row print:flex-wrap gap-y-2 gap-x-6 text-sm text-gray-600">
-          <div className="flex items-center gap-1.5">
-            <LuPhone size={16} className="text-orange-600" />
-            <span>{header.phone}</span>
+        <div className="mt-4 text-sm text-gray-600 space-y-2 sm:space-y-0 print:space-y-0">
+          <div className="inline-block mr-6 align-middle">
+            <span className="inline-block align-middle mr-1.5"><LuPhone size={16} className="text-orange-600" /></span>
+            <span className="inline-block align-middle">{header.phone}</span>
           </div>
-          <div className="flex items-center gap-1.5">
-            <LuMail size={16} className="text-orange-600" />
+          <div className="inline-block mr-6 align-middle">
+            <span className="inline-block align-middle mr-1.5"><LuMail size={16} className="text-orange-600" /></span>
             <a
               href={`mailto:${header.email}`}
-              className="hover:text-orange-700 transition-colors"
+              className="hover:text-orange-700 transition-colors inline-block align-middle relative z-50"
             >
               {header.email}
             </a>
           </div>
-          <div className="flex items-center gap-1.5">
-            <FaGithub size={16} className="text-orange-600" />
+          <div className="inline-block mr-6 align-middle">
+            <span className="inline-block align-middle mr-1.5"><FaGithub size={16} className="text-orange-600" /></span>
             <a
               href={header.githubUrl}
               target="_blank"
               rel="noreferrer"
-              className="hover:text-orange-700 transition-colors"
+              className="hover:text-orange-700 transition-colors inline-block align-middle relative z-50"
             >
               github.com/{header.githubName}
             </a>
           </div>
           {header.portfolioUrl && (
-            <div className="flex items-center gap-1.5">
-              <LuGlobe size={16} className="text-orange-600" />
+            <div className="inline-block mr-6 align-middle">
+              <span className="inline-block align-middle mr-1.5"><LuGlobe size={16} className="text-orange-600" /></span>
               <a
                 href={header.portfolioUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-orange-700 transition-colors"
+                className="hover:text-orange-700 transition-colors inline-block align-middle relative z-50"
               >
                 Portfolio Website
               </a>
             </div>
           )}
-          <div className="flex items-center gap-1.5">
-            <LuMapPin size={16} className="text-orange-600" />
-            <span>{header.address}</span>
+          <div className="inline-block mr-6 align-middle">
+            <span className="inline-block align-middle mr-1.5"><LuMapPin size={16} className="text-orange-600" /></span>
+            <span className="inline-block align-middle">{header.address}</span>
           </div>
         </div>
       </div>

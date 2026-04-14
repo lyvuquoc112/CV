@@ -2,6 +2,10 @@
 
 @layer base {
     @media print {
+        html {
+            font-size: 15px;
+            /* Giảm nhẹ font-size rễ để thu nhỏ các thành phần dùng rem thay vì dùng zoom */
+        }
 
         /* Ép buộc trình duyệt in màu nền và hình ảnh */
         * {
@@ -19,8 +23,8 @@
             background-color: white !important;
             margin: 0;
             padding: 0;
-            /* Thu nhỏ toàn bộ nội dung để vừa 1 trang A4 */
-            zoom: 0.95;
+            /* Thay vì dùng zoom có thể làm lỗi link của file PDF trên Chrome, 
+               hãy dùng font-size ở chèn vào HTML hoặc bỏ qua zoom nếu không quá cần thiết */
         }
 
         /* Đảm bảo nội dung vừa vặn với trang in */

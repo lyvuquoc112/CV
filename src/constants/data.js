@@ -15,7 +15,7 @@ export const CV_DATA = {
   education: {
     school: "FPT University",
     major: "Software Engineering",
-    status: "Current: Semester 5 - OJT | Current CGPA: 8.5/10",
+    status: "Current: Semester 5 - OJT | Current CGPA: 7.86/10",
     certificates: [
       {
         id: 1,

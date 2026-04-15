@@ -15,12 +15,12 @@ export const CV_DATA = {
   education: {
     school: "FPT University",
     major: "Software Engineering",
-    status: "Current: Semester 5 - OJT",
+    status: "Current: Semester 5 - OJT | Current CGPA: 8.5/10",
     certificates: [
       {
         id: 1,
         title: "Honorable Student",
-        details: "3 consecutive trimesters (Spring, Summer, Fall 2025).",
+        details: "3 consecutive trimesters: Spring 2025 (8.86), Summer 2025 (8.42), Fall 2025 (8.44).",
         link: "https://drive.google.com/file/d/162Jlg0xYtK3PML-B6-hyWJoOH2wLCpWt/view?usp=sharing",
         type: "academic",
       },
@@ -60,7 +60,7 @@ export const CV_DATA = {
       techStack: "Next.js 16, React 19, TypeScript, Tailwind CSS",
       responsibilities: [
         "Developed the core user interfaces including Authentication (Login/Register, Forgot Password) and Product Listings with filtering capabilities for buyers.",
-        "Built the Checkout flow, integrating Cash on Delivery (COD) payment method and preparing UI for future logistics API integration (e.g., Giao Hang Nhanh).",
+        "Built the Checkout flow, and integrating Cash on Delivery (COD) payment method.",
         "Implemented the Seller dashboard to manage and accept incoming orders.",
         "Collaborated directly with the Backend team to consume RESTful APIs and display dynamic data.",
       ],

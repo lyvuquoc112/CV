@@ -57,7 +57,7 @@ export const CV_DATA = {
       githubUrl: "https://github.com/lyvuquoc112/CycleX.git",
       githubDisplay: "https://github.com/lyvuquoc112/CycleX.git",
       teamSize: "5 members (3 FE, 2 BE)",
-      techStack: "Next.js 16, React 19, TypeScript, Tailwind CSS",
+      techStack: "Next.js, React, TypeScript, Tailwind CSS",
       responsibilities: [
         "Developed the core user interfaces including Authentication (Login/Register, Forgot Password) and Product Listings with filtering capabilities for buyers.",
         "Built the Checkout flow, and integrating Cash on Delivery (COD) payment method.",
